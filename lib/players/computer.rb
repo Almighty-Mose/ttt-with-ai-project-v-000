@@ -5,7 +5,7 @@ module Players
   def move(board)
     if !board.taken(5) #we take the center if possible
       move = "5"
-    elsif board.taken(5)
+    elsif board.turn_count == 2
       move = [1, 3, 7, 9].detect{|n| !board.taken(n)}
     elsif 
 end
