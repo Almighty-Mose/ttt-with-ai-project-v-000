@@ -93,6 +93,13 @@ class Game
       sleep(1)
       self.start
     end
+    
+    when over?
+      puts "Would you like to play again? y/n"
+      ans = gets.strip
+      if ans == "y" || ans == "Y"
+        Game.start
+      end
   end
   
   def self.start
