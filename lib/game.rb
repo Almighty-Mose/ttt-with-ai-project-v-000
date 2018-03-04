@@ -100,6 +100,7 @@ class Game
       if ans == "y" || ans == "Y"
         Game.start
       end
+    end
   end
   
   def self.start
