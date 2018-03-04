@@ -1,6 +1,8 @@
 module Players
   class Computer < Player
     def move(board)
+      move = nil
+      
       if !board.taken?(5)
         move = "5"
 
@@ -20,6 +22,8 @@ module Players
             move = win_combo.select{|i| !board.taken?(i+1)}.first.to_i.+(1).to_s
           end
         end
+        
+        
       end
       move
     end
