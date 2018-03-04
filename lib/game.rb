@@ -94,7 +94,7 @@ class Game
       self.start
     end
     
-    if over?
+    if self.over?
       puts "Would you like to play again? y/n"
       ans = gets.strip
       if ans == "y" || ans == "Y"
